@@ -1,7 +1,40 @@
-body {
-    background-color: black;
+h1 {
+    color: black;
+    font-size: 48px;
+    font-family: "futura", sans-serif;
+    font-weight: normal;
 }
 
-h1, p {
-    color: gold;
+h2 {
+	font-size: 24px;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: normal;
 }
+
+h3 {
+	font-size: 24px;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+#project {
+	font-weight: normal;
+}
+
+p {
+	font-size: 18px;
+}
+	
+div {
+	width: 250px;
+	height: 150px;
+}
+
+}
+body {
+    font-family: "proxima-nova", sans-serif;
+    text-align: center;
+    background-color: url("https://kaylahoailinh.files.wordpress.com/2014/10/wallpaper-hd-dire-wolf-hd-cool-7-hd-wallpapers.jpeg");
+    background-size: cover;
+}
+

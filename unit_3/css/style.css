@@ -1,0 +1,25 @@
+header {
+	text-align: left;
+	background: "images/direwolf.jpg"
+	background-size: cover;
+	/*color: #fff;*/
+	font-family: "proxima-nova", sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: "futura", sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+	font-family: "proxima-nova", sans-serif;
+	font-weight: bold;
+}
+
+#class byline {
+	text-align: center;
+}
+
