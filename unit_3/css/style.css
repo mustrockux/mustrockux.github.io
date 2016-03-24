@@ -16,13 +16,17 @@ h2 {
 	font-style: italic;
 	font-size: 24px;
 }
+
+img {
+	text-align: center;
+}
+
 body {
 	/*background: linear-gradient(white,black);*/
 	background: url("images/direwolf.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	text-align: left top
-;
+	text-align: left top;
 }
 	/*
 	what's the diff between background and bakground-img?
@@ -41,5 +45,3 @@ div.container {
 	max-width: 300px;
 	border: 1px solid blue;
 	margin: 20px 20px 20px 80px;
-
-}
