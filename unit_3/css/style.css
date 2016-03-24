@@ -1,25 +1,45 @@
-header {
-	text-align: left;
-	background: "images/direwolf.jpg"
-	background-size: cover;
-	/*color: #fff;*/
-	font-family: "proxima-nova", sans-serif;
-	font-size: 24px;
-	font-weight: normal;
-}
-
 h1 {
     font-size: 48px;
-    font-family: "futura", sans-serif;
+    font-family: "futura-pt", sans-serif;
     font-weight: normal;
 }
 
 h2 {
 	font-family: "proxima-nova", sans-serif;
-	font-weight: bold;
+	font-size: 24px;
+	font-weight: normal;
 }
 
-#class byline {
+#byline {
 	text-align: center;
+	font-weight: bolder;
+	font-style: italic;
+	font-size: 24px;
+}
+body {
+	/*background: linear-gradient(white,black);*/
+	background: url("images/direwolf.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: left top
+;
+}
+	/*
+	what's the diff between background and bakground-img?
+	why can't I set image form images folder? 
+	*/
+
+p {
+	font-family: "proxima-nova", sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 0px 20px 0px 20px;
+
 }
 
+div.container {
+	max-width: 300px;
+	border: 1px solid blue;
+	margin: 20px 20px 20px 80px;
+
+}
