@@ -1,67 +1,47 @@
-body {
-	color: white;
-	background-image: url("..//images/direwolf2.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	text-align: left top;
-    width: center;
-    height: 700px;
-    border: 1px solid gray;
-}
-
-header {
-	font-family: "proxima-nova", sans-serif;
-	font-size: 18px;
-	font-weight: normal;
-    width: 100%;
-}
-
-nav {
-	text-align: right;
-}
-
-#logo {    
-	font-size: 48px;
-    font-family: "futura-pt", sans-serif;
-    font-weight: normal;
-}
-
-a {
-	color: white;
-	text-decoration: none;
-}
-
 h1 {
     font-size: 48px;
-    font-family: "futura", sans-serif;
+    font-family: "futura-pt", sans-serif;
     font-weight: normal;
 }
 
 h2 {
 	font-family: "proxima-nova", sans-serif;
 	font-size: 24px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 #byline {
-	text-align: left;
+	text-align: center;
 	font-weight: bolder;
 	font-style: italic;
 	font-size: 24px;
 }
-#section {
 
-
+img {
+	text-align: center;
 }
+
+body {
+	/*background: linear-gradient(white,black);*/
+	background: url("images/direwolf.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: left top;
+}
+	/*
+	what's the diff between background and bakground-img?
+	why can't I set image form images folder? 
+	*/
+
 p {
 	font-family: "proxima-nova", sans-serif;
 	font-size: 18px;
 	font-weight: normal;
-	/*padding: 0px 20px 0px 20px;*/
+	padding: 0px 20px 0px 20px;
 
 }
 
-/*div.container {*/
+div.container {
 	max-width: 300px;
 	border: 1px solid blue;
 	margin: 20px 20px 20px 80px;
