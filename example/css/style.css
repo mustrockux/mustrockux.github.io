@@ -60,11 +60,19 @@ article {
 }
 
 #five {
+	background-color: purple;
+	width: 30%;
+	padding: 10px;
+	margin: 10px;
+}
+
+#six {
 	background-color: black;
 	width: 30%;
 	padding: 10px;
 	margin: 10px;
 }
+
 
 #section2 {
 	clear: both;
