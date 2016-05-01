@@ -1,3 +1,12 @@
+#container {
+	/*margin: 0 auto;*/
+	width: auto;
+	color: white;
+	background-color: orange;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 body {
 	font-family: helvetica, sans-serif;
 }
@@ -5,38 +14,39 @@ body {
 h1 {
 	color: black;
 	text-align: center;
-	line-height: 2em;
+	line-height: 1.5em;
 	font-size: 40px;
 }
 
 h2 {
 	font-size: 20px;
+	text-align: center;
+	line-height: 0;
 }
 
-
-#container {
-	width: 960px;
-	color: white;
-
+article {
+	float: left;
+	padding-bottom: 40px;
+	margin: 0 auto;
 }
 
 #one {
 	background-color: blue;
-	width: 280;
+	width: 30%;
 	padding: 10px;
 	margin: 10px;
 }
 
 #two {
 	background-color: green;
-	width: 280;
+	width: 30%;
 	padding: 10px;
 	margin: 10px;
 }
 
 #three {
 	background-color: grey;
-	width: 280;
+	width: 30%;
 	padding: 10px;
 	margin: 10px;
 
@@ -44,8 +54,25 @@ h2 {
 
 #four {
 	background-color: red;
+	width: 30%;
+	padding: 10px;
+	margin: 10px;
 }
 
 #five {
 	background-color: black;
+	width: 30%;
+	padding: 10px;
+	margin: 10px;
+}
+
+#section2 {
+	clear: both;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+img {
+	width: 280px;
+	padding: 20px 20px 20px 20px;
 }
