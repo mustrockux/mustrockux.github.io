@@ -1,11 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 
 .wrapper {
-   	background-color: #FFE2B8;
-    border: 1px black solid;
-    /*padding: 20px;*/
     width: 100%;
 }
+
 body {
 	color: black;
 	background-image: url("..//images/direwolf2.jpg");
@@ -14,37 +12,41 @@ body {
 	font-family: 'proxima-nova', sans-serif;
 	text-align: left top;
     width: 100%;
-    height: 650px;
+    height: 100%;
     border: 1px solid gray;
-    /*margin: 20px 20px 20px 20px;*/
+    /*How to get the border height to scale?*/
 }
 
 header {
-	background-color: #FFED74;
-	border: 1px black solid;
     /*padding: 20px;*/
-	font-size: 16px;
+	font-size: 1em;
 	font-weight: normal;
     width: 100%;
 }
 
+#hero {
+    padding: 1%;
+	text-align: center;
+}
+
 .logo {    
 	color: white;
-	font-size: 48px;
+	background-color: rgba(3 3 3 50);
+	font-size: 3em;
 	font-family: 'PT Sans', sans-serif;
     font-weight: normal;
     letter-spacing: 1em;
-    line-height: 1em;
-	text-align: center;
-	margin: 20px 20px 20px 20px;
+    line-height: 1.75em;
+	text-align: left;
+	margin-top: 0;
 }
 
 nav {
-	background-color: #E8C66A;
-	border: 1px black solid;
-	padding-right: 20px;
+	padding-right: 2%;
 	line-height: 1.5em;
-	text-align: right;
+	float: right;
+	text-transform: uppercase;
+	letter-spacing: .75em;
 }
 
 
@@ -56,7 +58,7 @@ a {
 #title {
 	color: white;
 	font-family: 'proxima-nova', sans-serif;
-	font-size: 48px;
+	font-size: 3em;
 	text-align: left;
 	line-height: 1em;
 }
@@ -69,20 +71,20 @@ a {
 	font-style: italic;
 	font-size: 1.5em;
 	line-height: 1.5em;
-	margin-top: 40px;
 }
 
-button {
+
+.cta {
     color: white;
     background-color: transparent;
     padding: 16px 32px;
-    font-size: 16px;
+    font-size: 1em;
     border: 2px solid white;
-    /*position: relative;*/
-    /*top: 200px;*/
+/*how to position the button below the hero?*/
+	margin-top: 300px;
 }
-
-button:hover {
+/*did I treat this cta hover psuedoclass proeprly?*/
+.cta:hover {
     background-color: white;
     color: black;
 }
@@ -115,24 +117,14 @@ p {
 	padding: 0px 20px 0px 20px;
 }
 
-#hero {
-	background-color: #E89C6C;
-	border: 1px black solid;
-    /*padding: 20px;*/
-	text-align: center;
-	width: 100%;
-}
-
 #about-me {
-	background-color: #E89C6C;
-	border: 1px black solid;
-    padding: 20px;
+	position: relative;
+	margin-top: 380px;	
+    padding: 1%;
 }
 
 #work {
-	background-color: #FFB7CF;
-	border: 1px black solid;
-    padding: 20px;
+    padding: 1%;
 }
 
 /*where should this really go? DO I need this when I have dlear:both meethod in #downloads?*/
@@ -148,30 +140,25 @@ p {
 
 article {
     float: left;
-    background-color: #E582A2;
-    border: 1px black solid;
-    padding: 20px;
+    border: 1px grey solid;
+    padding: 1%;
     width: 46%;
     height: 200px;
 }
 
 #downloads {
 	clear: both;
-	background-color: #E89C6C;
-	border: 1px black solid;
-    padding: 20px;
+    padding: 1%;
 }
 
 #contact {
-	background-color: #E89C6C;
-	border: 1px black solid;
-    padding: 20px;
+    padding: 1%;
 }
 
 footer {
-	background-color: #FF957E;
-	border: 1px black solid;
-    padding: 20px;
+    padding: 1%;
 }
+
+
 
 
