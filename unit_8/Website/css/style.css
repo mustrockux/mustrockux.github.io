@@ -13,19 +13,20 @@ body {
 	text-align: left top;
     width: 100%;
     height: 100%;
-    border: 1px solid gray;
-    /*How to get the border height to scale?*/
 }
 
 header {
-    /*padding: 20px;*/
+    padding: 2%;
 	font-size: 1em;
 	font-weight: normal;
     width: 100%;
+        /*How to get the border height to scale?*/
+    border: 1px solid gray;
 }
 
+
 #hero {
-    padding: 1%;
+    padding: 2%;
 	text-align: center;
 }
 
@@ -42,11 +43,14 @@ header {
 }
 
 nav {
-	padding-right: 2%;
+	background-color: rgba(155 155 155 50);
 	line-height: 1.5em;
 	float: right;
+	/*why is padding not showing?*/
+	padding-right: 2%;
 	text-transform: uppercase;
 	letter-spacing: .75em;
+	display: block;
 }
 
 
@@ -119,7 +123,7 @@ p {
 
 #about-me {
 	position: relative;
-	margin-top: 380px;	
+	margin-top: 340px;	
     padding: 1%;
 }
 
