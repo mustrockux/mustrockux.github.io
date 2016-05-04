@@ -145,8 +145,7 @@ p {
     clear: both;
     height: 0;
 }
-
-#left {
+article {
     background-color: #E582A2;
     border: 1px black solid;
     padding: 20px;
@@ -154,16 +153,8 @@ p {
     width: 46%;
 }
 
-#right {
-    background-color: #E55B88;
-    border: 1px black solid;
-    padding: 20px;
-    float: right;
-    width: 46%;
-}
-
-
 #downloads {
+	clear: both;
 	background-color: #E89C6C;
 	border: 1px black solid;
     padding: 20px;

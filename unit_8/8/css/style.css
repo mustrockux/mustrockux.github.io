@@ -4,30 +4,42 @@
     width: 100%;
 }
 
+#heroborder {
+ 	background-image: url("..//images/direwolf2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    padding: 20px;
+}
+
 body {
 	color: black;
-	background-image: url("..//images/direwolf2.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
 	font-family: 'proxima-nova', sans-serif;
-	text-align: left top;
     width: 100%;
-    height: 100%;
+    margin: 0px;
 }
 
 header {
-    padding: 2%;
 	font-size: 1em;
 	font-weight: normal;
     width: 100%;
-        /*How to get the border height to scale?*/
-    border: 1px solid gray;
 }
 
+nav {
+	float: right;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
 
 #hero {
-    padding: 2%;
+    padding: 1%;
 	text-align: center;
+	min-height: 100vh;
+    border: 1px solid grey;
 }
 
 .logo {    
@@ -36,35 +48,19 @@ header {
 	font-size: 3em;
 	font-family: 'PT Sans', sans-serif;
     font-weight: normal;
-    letter-spacing: 1em;
-    line-height: 1.75em;
+    letter-spacing: .75em;
 	text-align: left;
 	margin-top: 0;
-}
-
-nav {
-	background-color: rgba(155 155 155 50);
-	line-height: 1.5em;
-	float: right;
-	/*why is padding not showing?*/
-	padding-right: 2%;
-	text-transform: uppercase;
-	letter-spacing: .75em;
-	display: block;
-}
-
-
-a {
-	color: white;
-	text-decoration: none;
-}
+	line-height: 1.5em}
 
 #title {
 	color: white;
 	font-family: 'proxima-nova', sans-serif;
 	font-size: 3em;
 	text-align: left;
-	line-height: 1em;
+    /* placement with margin - good idea? 
+    why does margin spill to bottom if tag is margin-top?*/
+    margin-top: 140px;
 }
 
 #byline {
@@ -75,22 +71,6 @@ a {
 	font-style: italic;
 	font-size: 1.5em;
 	line-height: 1.5em;
-}
-
-
-.cta {
-    color: white;
-    background-color: transparent;
-    padding: 16px 32px;
-    font-size: 1em;
-    border: 2px solid white;
-/*how to position the button below the hero?*/
-	margin-top: 300px;
-}
-/*did I treat this cta hover psuedoclass proeprly?*/
-.cta:hover {
-    background-color: white;
-    color: black;
 }
 
 h1 {
@@ -107,6 +87,24 @@ h2 {
 	margin-left: 20px;
 }
 
+/*how to position the button below the hero?*/
+.cta {
+    color: white;
+    background-color: transparent;
+    padding: 16px 32px;
+    font-size: 1em;
+    border: 2px solid white;
+    position: relative;
+    top: 200px;
+}
+
+/*did I treat this cta hover psuedoclass proeprly?*/
+.cta:hover {
+    border: 2px solid grey;
+    background-color: grey;
+    color: black;
+}
+
 
 h3 {	
 	font-size: 1.25em;
@@ -121,9 +119,12 @@ p {
 	padding: 0px 20px 0px 20px;
 }
 
+ur {
+	list-style: none;
+}
+
 #about-me {
 	position: relative;
-	margin-top: 340px;	
     padding: 1%;
 }
 
