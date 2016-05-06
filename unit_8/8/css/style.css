@@ -30,9 +30,13 @@ nav {
 	letter-spacing: .5em;
 }
 
-a {
+nav a {
 	color: white;
 	text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 #hero {
@@ -44,7 +48,8 @@ a {
 
 .logo {    
 	color: white;
-	background-color: rgba(3 3 3 50);
+    /*color is not working*/
+	background-color: rgba(3 3 3 .5);
 	font-size: 3em;
 	font-family: 'PT Sans', sans-serif;
     font-weight: normal;
@@ -105,9 +110,10 @@ h2 {
 }
 
 h3 {	
-	font-size: 1.35em;
+	font-size: 1.5em;
 	font-weight: normal;
 	text-align: center;	
+    margin-bottom: 0;
 }
 
 ul {
@@ -117,12 +123,12 @@ ul {
 
 li {
 	float: left;
- 	width: 30%;
- 	outline: 1px solid grey;
+    font-size: 1.15em;
+    width: 30%;
+    padding-left: 2%;
  	text-align: center;
   	line-height: 50px;
   	color: black;
-  	background: white;
 }
 
 p {
@@ -152,7 +158,7 @@ p {
     clear: both;
     height: 0;
 }
-
+/*why arenb;t these columns spaced out like the li columns?*/
 article {
     font-size: .75em;
     float: left;
@@ -162,18 +168,32 @@ article {
 
 #projectborder {
     border: 1px solid grey;
+    min-height: 145px;
+    background-color: rgba(74, 74, 74, .25);
+    color: white;
+
+}
+
+#proj1 #projectborder {
+}
+
+#proj2 #projectborder {
+}
+
+#proj3 #projectborder {
+}
+
+#proj4 #projectborder {
 }
 
 .secondarybutton {
-    color: black;
-    background-color: transparent;
+    color: white;
     font-size: 1em;
+    /*how do I center the cta within the box?*/
 }
 
 .secondarybutton:hover {
-    border: 2px solid grey;
-    background-color: grey;
-    color: black;
+    font-weight: bolder;
 }
 
 #downloads {
@@ -189,6 +209,20 @@ footer {
     padding: 1%;
 }
 
+@media only screen and (max-width: 1060px) {
+  .logo {    
+    font-size: 2.75em;
+    }
+
+h1 {
+    font-size: .75;
+    }
+
+  nav a {
+    font-size: .1em;
+      }
+  
+}
 
 
 
