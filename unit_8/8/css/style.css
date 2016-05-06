@@ -223,15 +223,12 @@ footer {
     float: none;
     }
 
-/*h1 {
+h1, h2, p{
     font-size: .75;
-    }
+    text-align: center;
 
-  nav a {
-    font-size: .1em;
-      }
-  
-}*/
+    }  
+}
 
 
 
