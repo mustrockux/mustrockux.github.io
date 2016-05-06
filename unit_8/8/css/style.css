@@ -85,10 +85,10 @@ h2 {
 	font-size: 1.5em;
 	font-weight: normal;
 	margin-left: 20px;
+	margin-bottom: 0;
 }
 
-/*how to position the button below the hero?*/
-.cta {
+.primarybutton {
     color: white;
     background-color: transparent;
     padding: 16px 32px;
@@ -98,18 +98,31 @@ h2 {
     top: 200px;
 }
 
-/*did I treat this cta hover psuedoclass proeprly?*/
-.cta:hover {
+.primarybutton:hover {
     border: 2px solid grey;
     background-color: grey;
     color: black;
 }
 
-
 h3 {	
-	font-size: 1.25em;
-	font-weight: lighter;
-	margin-left: 20px;
+	font-size: 1.35em;
+	font-weight: normal;
+	text-align: center;	
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+}
+
+li {
+	float: left;
+ 	width: 30%;
+ 	outline: 1px solid grey;
+ 	text-align: center;
+  	line-height: 50px;
+  	color: black;
+  	background: white;
 }
 
 p {
@@ -119,16 +132,13 @@ p {
 	padding: 0px 20px 0px 20px;
 }
 
-ur {
-	list-style: none;
-}
-
 #about-me {
 	position: relative;
     padding: 1%;
 }
 
 #work {
+	clear: both;
     padding: 1%;
 }
 
@@ -144,11 +154,26 @@ ur {
 }
 
 article {
+    font-size: .75em;
     float: left;
-    border: 1px grey solid;
-    padding: 1%;
-    width: 46%;
-    height: 200px;
+    padding-left: 2%;
+    width: 30%;
+}
+
+#projectborder {
+    border: 1px solid grey;
+}
+
+.secondarybutton {
+    color: black;
+    background-color: transparent;
+    font-size: 1em;
+}
+
+.secondarybutton:hover {
+    border: 2px solid grey;
+    background-color: grey;
+    color: black;
 }
 
 #downloads {
