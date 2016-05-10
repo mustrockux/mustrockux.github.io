@@ -121,21 +121,15 @@ p {
 	line-height: 1.5em;
 }
 
-#about-me {
-	position: relative;
-    padding: 1%;
-}
+#about {
 
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
 }
 
 #work {
+
+}
+
+#projects {
     font-size: .75em;
     float: left;
     /* padding-left: 2%; */
@@ -180,15 +174,23 @@ p {
 
 #downloads {
 	clear: both;
-    padding: 1%;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
 
 #contact {
-    padding: 1%;
+
 }
 
 footer {
-    padding: 1%;
+
 }
 
 @media only screen and (max-width: 1150px) {
