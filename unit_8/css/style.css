@@ -53,8 +53,6 @@ a {
 
 .logo {
 	color: white;
-    /*color is not working*/
-	background-color: rgba(3 3 3 .5);
 	font-size: 3em;
 	font-family: 'PT Sans', sans-serif;
 	font-weight: normal;
@@ -64,12 +62,6 @@ a {
 	line-height: 1.5em;
 	float: left;
 	}
-
-#title {
-	
-    /* placement with margin - good idea? 
-    why does margin spill to bottom if tag is margin-top?*/
-}
 
 #byline {
 	font-style: italic;
@@ -134,12 +126,6 @@ p {
     padding: 1%;
 }
 
-#work {
-	clear: both;
-    padding: 1%;
-}
-
-/*where should this really go? DO I need this when I have dlear:both meethod in #downloads?*/
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -148,8 +134,8 @@ p {
     clear: both;
     height: 0;
 }
-/*why arenb;t these columns spaced out like the li columns?*/
-article {
+
+#work {
     font-size: .75em;
     float: left;
     /* padding-left: 2%; */
@@ -180,15 +166,16 @@ article {
 .secondarybutton {
     color: white;
     font-size: 1em;
-    /*how do I center the cta within the box?*/
     display: block;
     border: 2px solid;
     padding: 1em 2em;
     text-align: center;
+    background-color: transparent;
 }
 
 .secondarybutton:hover {
-    font-weight: bolder;
+    color: grey;
+    border: 2px solid grey;
 }
 
 #downloads {
@@ -204,25 +191,45 @@ footer {
     padding: 1%;
 }
 
-@media only screen and (max-width: 1058px) {
-  .logo {    
-    font-size: 2.75em;
+@media only screen and (max-width: 1150px) {
+    .logo {    
+        letter-spacing: .5em;
+        text-align: center;
+        float: none;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 2.75em;
+    }
+
+    #byline {
+        font-size: 1.25em;
     }
 }
 
-@media only screen and (max-width: 768px) {
-   .logo {    
-    font-size: 2em;
-    text-align: center;
+@media only screen and (max-width: 1024) {
+    .wrapper {
     }
-  nav {    
-    float: none;
+}
+
+
+@media only screen and (max-width: 780px) {
+    .logo {    
+        font-size: 2em;
+    }
+  
+    nav {    
+        text-align: center;
+        float: none;
     }
 
-h1, h2, p{
-    font-size: .75;
-    text-align: center;
-
+    p {
+        font-size: .5em;
+        text-align: center;
     }  
 }
 
