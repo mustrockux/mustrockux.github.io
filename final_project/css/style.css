@@ -14,6 +14,12 @@
  	color: #FFF;
 }
 
+#hero {
+    padding: 2em;
+    height: 100%;
+    border: 1px solid grey;
+}
+
 body {
 	color: rgba(0,0,0,.87);
 	font-family: 'proxima-nova', sans-serif;
@@ -44,12 +50,6 @@ nav a {
 a {
     text-decoration: none;
     transition-duration: .25s;
-}
-
-#hero {
-    padding: 2em;
-    height: 100%;
-    border: 1px solid grey;
 }
 
 .logo {
@@ -114,6 +114,7 @@ li {
 	text-align: center;
 	line-height: 50px;
 	color: black;
+    border: 1px solid rgba(0,0,0,.25);
 }
 
 .description {
@@ -149,13 +150,20 @@ p {
     margin-left: 20px;
 }
 
-#projectborder {
+.projectborder {
     border: 1px solid grey;
-    min-height: 145px;
-    background-color: rgba(74, 74, 74, .25);
+    min-height: 200px;
     color: white;
     padding: 2em;
-    background-image: 
+
+}
+
+#dot {
+
+}
+
+.projectborder:hover {
+    background-color: rgba(74, 74, 74, .25);
 }
 
 .secondarybutton {
@@ -182,6 +190,8 @@ p {
 }
 
 footer {
+    margin: 40px 0 40px 0;
+    text-align: center;
 }
 
 @media only screen and (max-width: 1058px) {
