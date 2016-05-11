@@ -163,6 +163,7 @@ p {
 }
 
 .projectborder:hover {
+    color: white;
     background-color: rgba(74, 74, 74, .25);
 }
 
