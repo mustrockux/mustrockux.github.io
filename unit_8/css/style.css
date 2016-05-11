@@ -75,7 +75,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 2em;
 	font-weight: normal;
 }
 
@@ -86,7 +86,7 @@ h2 {
     font-size: 1em;
     border: 2px solid;
     display: inline-block;
-    margin-top: 1em;
+    margin-top: 5em;
 }
 
 .primarybutton:hover {
@@ -116,19 +116,20 @@ li {
 	color: black;
 }
 
+.description {
+   margin: 0 70px 0 70px;
+}
+
 p {
 	font-weight: normal;
 	line-height: 2em;
 }
 
-#about-me {
+#about {
 	position: relative;
-    padding: 1%;
 }
 
 #work {
-	clear: both;
-    padding: 1%;
 }
 
 .clearfix:after {
@@ -140,11 +141,12 @@ p {
     height: 0;
 }
 
-article {
+#project {
     font-size: 1em;
     float: left;
-    width: 33.33%;
-    padding: .5em;
+    width: 48%;
+    padding: 1em;
+    margin-left: 20px;
 }
 
 #projectborder {
@@ -153,18 +155,7 @@ article {
     background-color: rgba(74, 74, 74, .25);
     color: white;
     padding: 2em;
-}
-
-#proj1 #projectborder {
-}
-
-#proj2 #projectborder {
-}
-
-#proj3 #projectborder {
-}
-
-#proj4 #projectborder {
+    background-image: 
 }
 
 .secondarybutton {
@@ -177,7 +168,9 @@ article {
 }
 
 .secondarybutton:hover {
-    font-weight: bolder;
+    color: grey;
+    border: 2px white solid;
+    background-color: white
 }
 
 #downloads {
@@ -185,6 +178,7 @@ article {
 }
 
 #contact {
+    text-decoration: none;
 }
 
 footer {
