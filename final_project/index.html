@@ -17,11 +17,102 @@
 					<a href="#contact">Contacts</a>
 				</nav>
 		</header>	
-			<h1>Product Designer</h1>
-			<h2 id="byline">Product Predator. Pack Designer.<br>Insatiable She-Wolf.</h2>
-			<a href="#about-me" class="primarybutton">LEARN MORE</a>
+			<div class="hero-carousel" role="region" aria-label="Featured tour">
+				<button class="hero-dismiss" aria-label="Dismiss hero">×</button>
+				<div class="hero-slides">
+					<article class="hero-slide active">
+						<div class="hero-left">
+							<h1>Welcome to the Pack</h1>
+							<p class="hero-body">Explore the work and process behind the designs. This quick tour highlights featured projects and the thinking that shaped them.</p>
+							<div class="hero-actions">
+								<a href="#work" class="secondarybutton">Take the tour</a>
+								<button class="primarybutton hero-next" type="button">Next →</button>
+							</div>
+						</div>
+						<div class="hero-right">
+							<img src="images/arya_and_nymeria.jpg" alt="Featured artwork: Arya and Nymeria">
+						</div>
+					</article>
+
+					<article class="hero-slide">
+						<div class="hero-left">
+							<h1>Human-Centered Strategy</h1>
+							<p class="hero-body">From discovery to delivery, each project starts with user needs and business goals to create meaningful, measurable outcomes.</p>
+							<div class="hero-actions">
+								<a href="#work" class="secondarybutton">Take the tour</a>
+								<button class="primarybutton hero-next" type="button">Next →</button>
+							</div>
+						</div>
+						<div class="hero-right">
+							<img src="images/bran_and_summer.jpg" alt="Featured artwork: Bran and Summer">
+						</div>
+					</article>
+
+					<article class="hero-slide">
+						<div class="hero-left">
+							<h1>Design with Precision</h1>
+							<p class="hero-body">Detailed flows, prototypes, and high-fidelity UI ensure clarity across teams and reduce delivery risk.</p>
+							<div class="hero-actions">
+								<a href="#work" class="secondarybutton">Take the tour</a>
+								<button class="primarybutton hero-next" type="button">Next →</button>
+							</div>
+						</div>
+						<div class="hero-right">
+							<img src="images/jon_and_ghost.jpg" alt="Featured artwork: Jon and Ghost">
+						</div>
+					</article>
+
+					<article class="hero-slide">
+						<div class="hero-left">
+							<h1>Ship and Learn</h1>
+							<p class="hero-body">Measure impact, test with users, iterate quickly, and keep improving. Great products are never done.</p>
+							<div class="hero-actions">
+								<a href="#work" class="secondarybutton">Take the tour</a>
+								<button class="primarybutton hero-next" type="button">Next →</button>
+							</div>
+						</div>
+						<div class="hero-right">
+							<img src="images/rob_and_greywind.jpg" alt="Featured artwork: Robb and Grey Wind">
+						</div>
+					</article>
+				</div>
+			</div>
 		</section>
 	</div>
+	<script>
+	(function() {
+	  var hero = document.querySelector('.hero-carousel');
+	  if (!hero) return;
+	  var slides = Array.prototype.slice.call(hero.querySelectorAll('.hero-slide'));
+	  var nextButtons = Array.prototype.slice.call(hero.querySelectorAll('.hero-next'));
+	  var dismissBtn = hero.querySelector('.hero-dismiss');
+	  var current = Math.max(0, slides.findIndex(function(s){ return s.classList.contains('active'); }));
+
+	  function show(index) {
+	    slides.forEach(function(s){ s.classList.remove('active'); });
+	    var newIndex = ((index % slides.length) + slides.length) % slides.length;
+	    slides[newIndex].classList.add('active');
+	    current = newIndex;
+	  }
+
+	  nextButtons.forEach(function(btn){
+	    btn.addEventListener('click', function(){ show(current + 1); });
+	  });
+
+	  if (dismissBtn) {
+	    dismissBtn.addEventListener('click', function(){
+	      hero.style.display = 'none';
+	    });
+	  }
+
+	  // Keyboard: Right arrow advances, Esc dismisses
+	  document.addEventListener('keydown', function(e){
+	    if (!hero || hero.style.display === 'none') return;
+	    if (e.key === 'ArrowRight') { show(current + 1); }
+	    if (e.key === 'Escape') { hero.style.display = 'none'; }
+	  });
+	})();
+	</script>
 	<div class="wrapper">	
 		<section id="about">
 			<h2>About</h2>

@@ -5,20 +5,112 @@
     margin: auto;
 }
 
+/* Hero container becomes neutral; slides provide their own imagery */
 #heroborder {
- 	background-image: url("..//images/direwolf2.jpg");
- 	background-repeat: no-repeat;
- 	background-size: cover;
- 	padding: 2em;
- 	height: 100vh;
- 	color: #FFF;
+    background: none;
+    padding: 0;
+    color: #FFF;
 }
 
 #hero {
-    padding: 2em;
-    height: 100%;
-    border: 1px solid grey;
+    padding: 0;
+    min-height: 100vh;
 }
+
+/* Dismissible hero carousel */
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #111;
+}
+
+.hero-dismiss {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    font-size: 24px;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.hero-slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide {
+    display: none;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-slide.active { display: flex; }
+
+.hero-slide .hero-left,
+.hero-slide .hero-right {
+    flex: 1 1 50%;
+}
+
+.hero-slide {
+    align-items: center;
+}
+
+.hero-left {
+    padding: 160px 160px 160px 160px; /* requested ~160px padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0) 100%);
+}
+
+.hero-right {
+    padding: 160px 160px 160px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.hero-body {
+    margin-top: 16px;
+    max-width: 46ch;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: space-between; /* left and right aligned */
+    align-items: center;
+    margin-top: 32px;
+    gap: 24px;
+}
+
+.hero-next {
+    white-space: nowrap;
+}
+
+/* Normalize buttons inside hero actions */
+.hero-actions .primarybutton { margin-top: 0; }
+.hero-actions .secondarybutton { display: inline-flex; }
 
 body {
 	color: rgba(0,0,0,.87);
@@ -88,6 +180,10 @@ h2 {
     display: inline-block;
     margin-top: 5em;
 }
+
+/* Ensure secondary looks neutral in hero */
+.secondarybutton { color: #fff; }
+.secondarybutton:hover { color: #111; }
 
 .primarybutton:hover {
     border: 2px solid grey;
@@ -215,6 +311,19 @@ h1, h2, p{
     text-align: center;
 
     }  
+}
+
+/* Responsive adjustments for hero */
+@media (max-width: 1024px) {
+  .hero-left { padding: 120px; }
+  .hero-right { padding: 120px 120px 120px 0; }
+}
+
+@media (max-width: 768px) {
+  .hero-slide { flex-direction: column; }
+  .hero-left { padding: 80px 24px 24px 24px; background: rgba(0,0,0,0.55); }
+  .hero-right { padding: 24px; }
+  .hero-actions { gap: 12px; }
 }
 
 
