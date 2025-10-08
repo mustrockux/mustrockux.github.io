@@ -108,6 +108,10 @@
     white-space: nowrap;
 }
 
+/* Normalize buttons inside hero actions */
+.hero-actions .primarybutton { margin-top: 0; }
+.hero-actions .secondarybutton { display: inline-flex; }
+
 body {
 	color: rgba(0,0,0,.87);
 	font-family: 'proxima-nova', sans-serif;
